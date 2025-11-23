@@ -8,6 +8,8 @@ export default defineNuxtConfig({
     '@nuxt/ui', // Nuxt UI 컴포넌트 라이브러리
     '@nuxt/eslint', // ESLint 통합 및 자동 설정
     '@vueuse/nuxt', // VueUse 컴포저블 라이브러리 (유틸리티 함수 모음)
+    '@pinia/nuxt', // Pinia 상태 관리 라이브러리
+    '@pinia-plugin-persistedstate/nuxt', // Pinia 상태 관리 라이브러리
   ],
 
   typescript: {
@@ -37,6 +39,6 @@ export default defineNuxtConfig({
   // 소스 맵 설정 (디버깅 시 유용)
   sourcemap: {
     server: true, // 서버 에러 디버깅
-    client: process.env.NODE_ENV === 'development',  // 개발 환경에서만 브라우저 에러 디버깅
+    client: process.env.NODE_ENV === 'development', // 개발 환경에서만 브라우저 에러 디버깅
   },
-})
+});

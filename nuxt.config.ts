@@ -14,7 +14,7 @@ export default defineNuxtConfig({
 
   typescript: {
     strict: true, // 런타임 에러 사전 방지, 코드 품질 향상
-    typeCheck: true, // 빌드 시 타입 오류 검출 (배포 전 버그 차단)
+    typeCheck: false, // 빌드 시 타입 오류 검출 -> nuxt4 와 호환 안맞아서 false 로 변경
     shim: false, // Nuxt 3 권장사항
   },
 

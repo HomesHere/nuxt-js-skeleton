@@ -25,7 +25,18 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      apiBase: process.env.NUXT_PUBLIC_API_BASE,
+      apiBaseUrl: process.env.NUXT_PUBLIC_API_BASE_URL || 'http://localhost:8080',
     },
+  },
+
+  devServer: {
+    port: 3000, // 개발 서버 포트 번호
+    host: 'localhost', // 로컬 호스트에서만 접속 가능
+  },
+
+  // 소스 맵 설정 (디버깅 시 유용)
+  sourcemap: {
+    server: true, // 서버 에러 디버깅
+    client: process.env.NODE_ENV === 'development',  // 개발 환경에서만 브라우저 에러 디버깅
   },
 })

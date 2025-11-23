@@ -94,3 +94,8 @@ footer
 - Props는 readonly로 취급
 - Emit 이벤트는 명시적으로 정의
 - 컴포넌트명은 PascalCase 사용
+
+# 인덴트 설정
+- 모든 코드는 2칸 스페이스 인덴트 사용
+- 탭 문자 사용 금지
+- TypeScript, JavaScript, Vue 파일은 반드시 2칸 인덴트
